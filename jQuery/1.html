@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  $("#show").click(function(){
+    $("#divTestArea21").fadeIn("fast");
+    $("#divTestArea22").fadeIn("slow");
+    $("#divTestArea23").fadeIn(2000);
+  });
+
+  $("#divTestArea21,#divTestArea22,#divTestArea23").click(
+      function () {
+          $(this).hide();
+      }
+  )
+	
+});
+</script>
+
+</head>
+<body>
+<div id="show">Покажи кутиите!</div>
+<div id="divTestArea21" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<div id="divTestArea22" style="width: 50px; height: 50px; display: none; background-color: #C3D1DF;"></div>
+<div id="divTestArea23" style="width: 50px; height: 50px; display: none; background-color: #9966FF;"></div>
+
+</body>
+</html>
+

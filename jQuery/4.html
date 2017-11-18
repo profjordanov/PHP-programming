@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+	 $( "#action" ).click(function(){
+		var ime=$( "#ime" ).val();
+		var komentar=$("#komentar").val();
+		$( "#ime" ).val(komentar);
+		$("#komentar").val(ime)
+	});
+	
+	
+});
+</script>
+
+</head>
+<body>
+<form>
+
+<input type="text" id="ime" />
+<input type="button" id="action" value="<<>>" />
+<input type="text" id="komentar" />
+
+</form>
+</body>
+</html>
+

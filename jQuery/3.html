@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+	 $( "#zima" ).click(function(){
+		$( "#box" ).css( "width", "+=200" ).css("height", "+=200");
+	});
+
+    $( "#lyato" ).click(function(){
+        $( "#box" ).css( "width", "-=200" ).css("height", "-=200");
+    });
+	
+});
+</script>
+<style>
+#box {
+background: black;
+color: snow;
+width: 100px;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<div id="zima"> Зима </div>
+<div id="lyato"> Лято </div>
+<div id="box"> Динамика на обемите</div>
+</body>
+</html>
+

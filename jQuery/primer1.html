@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  $("#show").click(function(){
+    $("#divTestArea21").fadeIn("fast");
+    $("#divTestArea22").fadeIn("slow");
+    $("#divTestArea23").fadeIn(2000);
+  });
+  
+  $("#divTestArea21").click(function(){
+	var bkg_old=$(this).css("background-color");
+	var bkg=$("#divTestArea22").css("background-color");
+    $(this).css("background-color",bkg);  
+	$("#divTestArea22").css("background-color",bkg_old);	
+  });
+  
+$("#divTestArea22").click(function(){
+	var bkg_old=$(this).css("background-color");
+
+	var bkg=$("#divTestArea23").css("background-color");
+    $(this).css("background-color",bkg); 
+$("#divTestArea23").css("background-color",bkg_old);	
+  });
+$("#divTestArea23").click(function(){
+var bkg_old=$(this).css("background-color");
+	var bkg=$("#divTestArea21").css("background-color");
+    $(this).css("background-color",bkg); 
+$("#divTestArea21").css("background-color",bkg_old);	
+  });   
+  
+  $( "#zima" ).click(function(){
+	$( "#box" ).css( "width", "+=200" );
+	$("#box").height("+=200px");
+	});
+
+	$( "#lyato" ).click(function(){
+		$("#box").animate({width:'-=200px',height:'-=200px'},"slow");
+		/*
+		$( "#box" ).css( "width", "-=200" );
+		$( "#box" ).css( "height", "-=200" );	
+		*/
+	});
+	
+	$( "#action" ).click(function(){
+		var ime=$( "#ime" ).val();
+		var komentar=$("#komentar").val();
+		$( "#ime" ).val(komentar);
+		$("#komentar").val(ime)
+	});
+	
+	$( "#action2" ).click(function(){
+		var src=$("#pic1").attr('src');
+		var src2=$("#pic2").attr('src');
+		$( "#pic1" ).attr('src',src2);
+		$( "#pic2" ).attr('src',src);
+	});
+	
+	
+	
+	});
+</script>
+ <style>
+#box {
+background: black;
+color: snow;
+width: 100px;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+<div id="zima"> Зима </div>
+<div id="lyato"> Лято </div>
+<div id="box"> Динамика </div>
+<div id="show">Покажи кутиите!</div>
+<div id="divTestArea21" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<div id="divTestArea22" style="width: 50px; height: 50px; display: none; background-color: #C3D1DF;"></div>
+<div id="divTestArea23" style="width: 50px; height: 50px; display: none; background-color: #9966FF;"></div>
+
+<form>
+
+<input type="text" id="ime" />
+<input type="button" id="action" value="<<>>" />
+<input type="text" id="komentar" />
+
+</form>
+<div>
+<img src="1.gif" id="pic1" style="width:190px;" />
+<input type="button" id="action2" value="<<>>" />
+<img src="2.gif" id="pic2" style="width:190px;"/>
+</div>
+</body>
+</html>
+

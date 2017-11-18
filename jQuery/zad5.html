@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+
+
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $( "#action2" ).click(function(){
+        var src=$("#pic1").attr('src');
+        var src2=$("#pic2").attr('src');
+        $( "#pic1" ).attr('src',src2);
+        $( "#pic2" ).attr('src',src);
+    });
+	
+	
+});
+</script>
+
+</head>
+<body>
+<div>
+<img src="1.gif" id="pic1" style="width:190px;" />
+<input type="button" id="action2" value="<<>>" />
+<img src="2.gif" id="pic2" style="width:190px;"/>
+</div>
+</body>
+</html>
+
