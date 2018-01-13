@@ -19,3 +19,8 @@
 $v = "100" + 1;       $v = 101;
 $v = "100ab" + 1;     $v = 101;
 $= "ab100" + 1;       $v = 1;
+
+$t = 'something';
+$text = <<<END_OF_TEXT
+= $t.
+END_OF_TEXT;
