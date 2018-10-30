@@ -1,0 +1,35 @@
+IMG {border:none;}
+
+a { border:none;}
+table {border:none;}
+form {margin:0px; padding:0px;}
+
+body
+{
+text-align: center; /*za IE 5 */
+margin : 0; 
+padding : 0;
+
+}
+
+
+
+.cats a:link{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#a7a4a3;text-decoration:none; }
+.cats a:visited{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#a7a4a3; text-decoration:none;}
+.cats a:hover{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#a7a4a3;text-decoration:none; }
+.cats a:active{ font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#a7a4a3; text-decoration:none;}
+
+a:link{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#d2d0d0;text-decoration:none; }
+a:visited{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#d2d0d0; text-decoration:none;}
+a:hover{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#d2d0d0;text-decoration:none; }
+a:active{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#d2d0d0; text-decoration:none;}
+
+
+.kutii{
+border:1px solid #6A6A6A ;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#666666;
+text-indent:2px;
+}
+
