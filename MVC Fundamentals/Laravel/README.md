@@ -1,6 +1,6 @@
 # Laravel - The PHP Framework For Web Artisans
 
-## knowledge base
+## Knowledge base
 
 1)Composer https://getcomposer.org/download/
 
