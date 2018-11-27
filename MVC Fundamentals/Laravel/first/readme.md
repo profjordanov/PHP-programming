@@ -1,5 +1,7 @@
 <a href="https://appdividend.com/2017/08/20/laravel-5-5-tutorial-example/">Tutorial With Example From Scratch</a>
 
+<a href="https://hackernoon.com/laravel-multiple-authentication-80daa855322b">Creating Multiple Authentication</a>
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
