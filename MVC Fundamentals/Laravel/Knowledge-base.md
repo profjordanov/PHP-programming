@@ -19,3 +19,27 @@ Route::get(‘/about', function () {return view(‘about');});
 `````
 
 Страницата моят_сайт/about ще зареди изглед about
+
+````
+Route::get('/about', 'UserController@index’);
+````
+
+Адреса моят_сайт/about ще изиска изпълнение на дефинирания контролер (който от своя страна ще извика изгледа, след като обработи данните)
+Метод index от класа UserController
+
+Ако е необходимо на един адрес да се приемат и заявки за GET и POST
+
+````
+Route::match(['get', 'post'], '/', function () {
+    //
+});
+
+````
+
+Пренасочване
+
+````
+Route::redirect(‘/contacts_old', '/ contacts_new ', 301);
+
+````
+
